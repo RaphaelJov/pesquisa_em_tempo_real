@@ -21,29 +21,29 @@
 
 <body>
 
-    <div id="mensagem">Texto copiado</div>
+    <div id="mensagem_final">Texto copiado</div>
     <h1>Checklist Processos</h1>
 
-    <input type=" text" id="buscar_input" placeholder="Digite para buscar..." autofocus>
+    <input type=" text" id="input" placeholder="Digite para buscar..." autofocus>
 
     <div class="container">
-        <div class="balao" data-text="Agendamento">
-            <h3>Agendamento RJ</h3>
-            <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE RJ
-                *ACEITA ANTECIPAR: NÃO
-                *PONTO DE REFERENCIA:
-                *CLIENTE:
-                *TEL:
-                *ENDEREÇO: OK
-                *CIENTE PROCEDIMENTOS: OK
-                *AGENDADO PARA:/2024 PERIODO:
-                *** RAPHAEL JOVINO ***
-            </p>
-            <button class="copiarBotao">Copiar</button>
-        </div>
+            <div class="checklist" data-text="Agendamento">
+                <h3>Agendamento RJ</h3>
+                <p class="texto_para_copiar">
+                    *AGENDAMENTO E CONTROLE RJ
+                    *ACEITA ANTECIPAR: <input type="text" class="input_checklist" placeholder="(Sim/Não)">
+                    *PONTO DE REFERENCIA: <input type="text" class="input_checklist" placeholder="(Sim/Não)">
+                    *CLIENTE: <input type="text" class="input_checklist" placeholder="Digite o nome do cliente">
+                    *TEL: <input type="text" class="input_checklist" placeholder="Telefone: (xx) xxxx-xxxx">
+                    *ENDEREÇO: OK
+                    *CIENTE PROCEDIMENTOS: SIM
+                    *AGENDADO PARA: <input type="text" class="input_checklist" placeholder="25/12/2024 - PERIODO - MANHÃ">
+                    *** RAPHAEL JOVINO ***
+                </p>
+                <button class="btn">Copiar</button>
+            </div>
 
-        <div class="balao" data-text="Sindico não permite">
+        <div class="checklist" data-text="Sindico não permite">
             <h3>Sindico não permite</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE RJ
@@ -55,10 +55,10 @@
                 *CIENTE PROCEDIMENTOS: OK
                 *** RAPHAEL JOVINO ***
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Retenção">
+        <div class="checklist" data-text="Retenção">
             <h3>RETENÇÃO</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE RJ
@@ -71,10 +71,10 @@
                 *RETIRADO CONFORME COMENTARIO
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Retenção off">
+        <div class="checklist" data-text="Retenção off">
             <h3>RETENÇÃO OFF</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO RJ
@@ -84,10 +84,10 @@
                 *INFORMAÇÃO: CANCELAMENTO
                 *OPERADOR: RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Gestão de Expectativa">
+        <div class="checklist" data-text="Gestão de Expectativa">
             <h3>Gestão de Expectativa</h3>
             <p class="texto_para_copiar">
                 Olá!
@@ -95,10 +95,10 @@
                 Estou tratando uma ordem de sua região,
                 gostaria de saber se a ordem vai a campo ou se precisamos reagendar por favor.
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Gestão de Expectativa massiva">
+        <div class="checklist" data-text="Gestão de Expectativa massiva">
             <h3>Gestão de Expectativa Massiva</h3>
             <p class="texto_para_copiar">
                 Olá!
@@ -106,10 +106,10 @@
                 Estou tratando uma ordem de sua região,
                 esta com massiva gostaria de saber como proceder com esse caso por favor.
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Iniciada Não finalizada">
+        <div class="checklist" data-text="Iniciada Não finalizada">
             <h3>Iniciada Não finalizada</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -121,10 +121,10 @@
                 *RAPHAEL JOVINO
 
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Chuva">
+        <div class="checklist" data-text="Chuva">
             <h3>Chuva</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -135,10 +135,10 @@
                 *NOME DA PESSOA COM QUEM FALOU:
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Endenreço não localizado">
+        <div class="checklist" data-text="Endenreço não localizado">
             <h3>Endenreço não localizado</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -149,10 +149,10 @@
                 *NOME DA PESSOA COM QUEM FALOU:
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Acesso proibido">
+        <div class="checklist" data-text="Acesso proibido">
             <h3>Acesso proibido</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -163,10 +163,10 @@
                 *NOME DA PESSOA COM QUEM FALOU:
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Casa Fechada">
+        <div class="checklist" data-text="Casa Fechada">
             <h3>Casa Fechada</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -177,10 +177,10 @@
                 *NOME DA PESSOA COM QUEM FALOU: X
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Caixa Lotada">
+        <div class="checklist" data-text="Caixa Lotada">
             <h3>Caixa Lotada</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -194,10 +194,10 @@
                 *RAPHAEL JOVINO
 
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Tubulação obstruida">
+        <div class="checklist" data-text="Tubulação obstruida">
             <h3>Tubulação obstruida</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -210,10 +210,10 @@
                 *VAI AGUARDAR O PRAZO? SIM
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Necessita de adequação predial">
+        <div class="checklist" data-text="Necessita de adequação predial">
             <h3>Necessita de adequação predial</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -226,10 +226,10 @@
                 *VAI AGUARDAR O PRAZO? SIM
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Fibra atenuada">
+        <div class="checklist" data-text="Fibra atenuada">
             <h3>Fibra atenuada</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -242,10 +242,10 @@
                 *VAI AGUARDAR O PRAZO? SIM
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Caixa Potencia alta">
+        <div class="checklist" data-text="Caixa Potencia alta">
             <h3>Caixa Potencia Alta</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -258,10 +258,10 @@
                 *VAI AGUARDAR O PRAZO? SIM
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Caixa Sem potencia">
+        <div class="checklist" data-text="Caixa Sem potencia">
             <h3>Caixa sem potencia</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -274,10 +274,10 @@
                 *VAI AGUARDAR O PRAZO? SIM
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Fora da área de cobertura">
+        <div class="checklist" data-text="Fora da área de cobertura">
             <h3>Fora da área de cobertura</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -294,10 +294,10 @@
                 *RAPHAEL JOVINO
 
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Area de Risco">
+        <div class="checklist" data-text="Area de Risco">
             <h3>Área de Risco</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -310,10 +310,10 @@
                 *VAI AGUARDAR O PRAZO? NÃO
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Manobra CTO">
+        <div class="checklist" data-text="Manobra CTO">
             <h3>Manobra CTO</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -326,10 +326,10 @@
                 *VAI AGUARDAR O PRAZO? SIM
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Pendente rede Externa">
+        <div class="checklist" data-text="Pendente rede Externa">
             <h3>Pendente rede Externa</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -342,10 +342,10 @@
                 *VAI AGUARDAR O PRAZO? SIM
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Ta Planta Interna">
+        <div class="checklist" data-text="Ta Planta Interna">
             <h3>Ta Planta Interna</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -358,10 +358,10 @@
                 *VAI AGUARDAR O PRAZO? SIM
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Checklist Fibrasil">
+        <div class="checklist" data-text="Checklist Fibrasil">
             <h3>Checklist Fibrasil</h3>
             <p class="texto_para_copiar">
                 ***AGENDAMENTO E CONTROLE RJ***
@@ -377,10 +377,10 @@
                     ** ORDEM NÃO TRATADA
                     **RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Processo CO">
+        <div class="checklist" data-text="Processo CO">
             <h3>Processo CO</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE RJ
@@ -388,10 +388,10 @@
                 *ORDEM NAO TRATADA
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Processo retenção">
+        <div class="checklist" data-text="Processo retenção">
             <h3>Processo retenção</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE RJ
@@ -400,10 +400,10 @@
                 *ORDEM NAO TRATADA
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Processo COP">
+        <div class="checklist" data-text="Processo COP">
             <h3>Processo COP</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -415,10 +415,10 @@
                 *ORDEM NÃO TRATADA
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Centro de excelencia">
+        <div class="checklist" data-text="Centro de excelencia">
             <h3>Centro de excelência</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE RJ
@@ -427,10 +427,10 @@
                 *ORDEM NAO TRATADA
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Reparo">
+        <div class="checklist" data-text="Reparo">
             <h3>Reparo</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE RJ
@@ -438,10 +438,10 @@
                 *ORDEM NAO TRATADA
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Ligação caiu">
+        <div class="checklist" data-text="Ligação caiu">
             <h3>Ligação caiu</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE RJ
@@ -449,58 +449,58 @@
                 *ORDEM NAO TRATADA
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Reagendar on">
+        <div class="checklist" data-text="Reagendar on">
             <h3>Reagendar focal localizado</h3>
             <p class="texto_para_copiar">
                 Conforme orientação do focal: Reagendar
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="cumprida on">
+        <div class="checklist" data-text="cumprida on">
             <h3>Agenda sera cumprida, contato com focal</h3>
             <p class="texto_para_copiar">
                 Conforme orientação do focal: Agenda será cumprida
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Reagendar off">
+        <div class="checklist" data-text="Reagendar off">
             <h3>Reagendar sem contato</h3>
             <p class="texto_para_copiar">
                 Reagendar, sem contato com focal
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Indevido agendamento">
+        <div class="checklist" data-text="Indevido agendamento">
             <h3>Indevido agendamento</h3>
             <p class="texto_para_copiar">
                 Indevido, pendente de agendamento
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Indevido triagem">
+        <div class="checklist" data-text="Indevido triagem">
             <h3>Indevido triagem</h3>
             <p class="texto_para_copiar">
                 Indevido, pendente triagem
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="Indevido data">
+        <div class="checklist" data-text="Indevido data">
             <h3>Indevido data errada</h3>
             <p class="texto_para_copiar">
                 Indevida, ordem será tratada na data programada
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
-        <div class="balao" data-text="suspeita de fraude">
+        <div class="checklist" data-text="suspeita de fraude">
             <h3>Suspeita de fraude</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
@@ -511,7 +511,7 @@
                 *NOME DA PESSOA COM QUEM FALOU: X
                 *RAPHAEL JOVINO
             </p>
-            <button class="copiarBotao">Copiar</button>
+            <button class="btn">Copiar</button>
         </div>
 
     </div>

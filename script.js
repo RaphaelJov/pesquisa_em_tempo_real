@@ -1,15 +1,19 @@
-const desaparecer_tudo = document.querySelector('.container');
-const buscar_input = document.getElementById('buscar_input');
-const balao = document.querySelectorAll('.balao');
-const botoesCopiar = document.querySelectorAll('.copiarBotao');
-const mensagem = document.getElementById('mensagem'); 
+const container = document.querySelector('.container');
+const input = document.getElementById('input');
+const checklist = document.querySelectorAll('.checklist');
+const btn = document.querySelectorAll('.btn');
+const mensagem_final = document.getElementById('mensagem_final'); 
 
-buscar_input.addEventListener('input', () => {
-    const consulta = buscar_input.value.toLowerCase();
 
-    balao.forEach(el => {
+input.addEventListener('input', () => {
+    const consulta = input.value.toLowerCase();
+
+    checklist.forEach(el => {
+        // a  variavel texto obtem o valor do atributo getAttribute('data-text')
+        // e obtem tudo em minusculo
         const texto = el.getAttribute('data-text').toLowerCase();
 
+        // se a consulta retorna vazia
         if (consulta === '') {
             el.classList.remove('visivel');
         } else if (texto.includes(consulta)) {
@@ -20,21 +24,50 @@ buscar_input.addEventListener('input', () => {
     });
 });
 
-botoesCopiar.forEach(el => {
+btn.forEach(el => {
     el.addEventListener('click', () => {
-        const textoParaCopiar = el.previousElementSibling.innerText;
-        
-        // Usa a API Clipboard para copiar o texto selecionado
-        navigator.clipboard.writeText(textoParaCopiar);
-        
-        // Exibe a mensagem por 2 segundos
-        desaparecer_tudo.classList.add('desaparecer');
-        mensagem.classList.add('visivel');
 
-        // Remove a visibilidade dos elementos após 2 segundos
+        //seleciona o elemento anterior a class btn, sendo ela 
+        const checklist = el.previousElementSibling;  
+
+        // cria variavel vazia para armazenar futuramente
+        let textoParaCopiar = "";
+
+        //percorrer os nós filhos de   checklist
+        checklist.childNodes.forEach(node => {
+
+            //verifica se o que foi encontrado é do tipo texto e concatena com textoParaCopiar
+            if (node.nodeType === Node.TEXT_NODE) {
+                // Adiciona o texto fixo diretamente ao textoParaCopiar
+                textoParaCopiar += node.textContent;
+            } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'INPUT') {
+                // Verifica se o input tem um valor preenchido
+                const inputValue = node.value ? node.value : '';
+                
+                // Adiciona apenas o valor se houver, caso contrário pula o placeholder
+                if (inputValue) {
+                    textoParaCopiar += ` ${inputValue} `;
+                }
+            }
+        });
+
+        // Usa a API Clipboard para copiar o texto combinado
+        navigator.clipboard.writeText(textoParaCopiar.trim())
+            .then(() => {
+                console.log("Copiado com sucesso!");
+            })
+            .catch(err => {
+                console.error("Erro ao copiar: ", err);
+            });
+
+        // Exibe a mensagem_final temporária de feedback
+        container.classList.add('desaparecer');
+        mensagem_final.classList.add('visivel');
+
+        // Remove a visibilidade da mensagem_final após 2 segundos
         setTimeout(() => {
-            mensagem.classList.remove('visivel');
-            desaparecer_tudo.classList.remove('desaparecer');
+            mensagem_final.classList.remove('visivel');
+            container.classList.remove('desaparecer');
             window.location.reload();
         }, 2000);
     });
