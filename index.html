@@ -27,62 +27,20 @@
     <input type=" text" id="input" placeholder="Digite para buscar..." autofocus>
 
     <div class="container">
-            <div class="checklist" data-text="Agendamento">
-                <h3>Agendamento RJ</h3>
-                <p class="texto_para_copiar">
-                    *AGENDAMENTO E CONTROLE RJ
-                    *ACEITA ANTECIPAR: <input type="text" class="input_checklist" placeholder="(Sim/Não)">
-                    *PONTO DE REFERENCIA: <input type="text" class="input_checklist" placeholder="(Sim/Não)">
-                    *CLIENTE: <input type="text" class="input_checklist" placeholder="Digite o nome do cliente">
-                    *TEL: <input type="text" class="input_checklist" placeholder="Telefone: (xx) xxxx-xxxx">
-                    *ENDEREÇO: OK
-                    *CIENTE PROCEDIMENTOS: SIM
-                    *AGENDADO PARA: <input type="text" class="input_checklist" placeholder="25/12/2024 - PERIODO - MANHÃ">
-                    *** RAPHAEL JOVINO ***
-                </p>
-                <button class="btn">Copiar</button>
-            </div>
 
-        <div class="checklist" data-text="Sindico não permite">
-            <h3>Sindico não permite</h3>
+        <div class="checklist" data-text="Retenção excepcional">
+            <h3>RETENÇÃO EXCEPCIONAL</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE RJ
-                *ACEITA ANTECIPAR: NÃO
-                *PONTO DE REFERENCIA:
-                *CLIENTE:
-                *TEL:
-                *ENDEREÇO: OK
-                *CIENTE PROCEDIMENTOS: OK
-                *** RAPHAEL JOVINO ***
-            </p>
-            <button class="btn">Copiar</button>
-        </div>
-
-        <div class="checklist" data-text="Retenção">
-            <h3>RETENÇÃO</h3>
-            <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE RJ
-                *MOTIVO RETENÇÃO: ARREPENDIMENTO NA COMPRA
-                *NÚMERO QUE REALIZOU CONTATO: X
-                *CLIENTE LOCALIZADO? NÃO
-                *A CEITOU TRANSFERENCIA? NÃO
-                *TRANSFERIDO COM SUCESSO? NÃO
-                *NOME DS ATENDENTE RETENÇÃO: X
-                *RETIRADO CONFORME COMENTARIO
+                *MOTIVO RETENÇÃO: <input type="text" class="input_checklist" placeholder="ex: cancelamento">
+                *NÚMERO QUE REALIZOU CONTATO: TRATAIVA RETENÇÃO
+                *CLIENTE LOCALIZADO: TRATATIVA RETENÇÃO
+                *A CEITOU TRANSFERENCIA: TRATATIVA RETENÇÃO
+                *TRANSFERIDO COM SUCESSO: TRATATIVA RETENÇÃO
+                *NOME DS ATENDENTE RETENÇÃO: TRATATIVA RETENÇÃO
+                *MOTIVO TRATATIVA COP: <input type="text" class="input_checklist"
+                    placeholder="conforme comentário retenção">
                 *RAPHAEL JOVINO
-            </p>
-            <button class="btn">Copiar</button>
-        </div>
-
-        <div class="checklist" data-text="Retenção off">
-            <h3>RETENÇÃO OFF</h3>
-            <p class="texto_para_copiar">
-                *AGENDAMENTO RJ
-                *ORDEM:
-                *CLIENTE:
-                *TEL:
-                *INFORMAÇÃO: CANCELAMENTO
-                *OPERADOR: RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
         </div>
@@ -94,6 +52,7 @@
                 Sou do Gestão de Expectativa, tudo bem?
                 Estou tratando uma ordem de sua região,
                 gostaria de saber se a ordem vai a campo ou se precisamos reagendar por favor.
+                ORDEM: <input type="text" class="input_checklist" placeholder="EX: 68452587 / 8-8A45D1456-8">
             </p>
             <button class="btn">Copiar</button>
         </div>
@@ -105,6 +64,7 @@
                 Sou do Gestão de Expectativa, tudo bem?
                 Estou tratando uma ordem de sua região,
                 esta com massiva gostaria de saber como proceder com esse caso por favor.
+                ORDEM: <input type="text" class="input_checklist" placeholder="EX: 68452587 / 8-8A45D1456-8">
             </p>
             <button class="btn">Copiar</button>
         </div>
@@ -114,10 +74,11 @@
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
                 *MOTIVO CLIENTE: INICIADO NÃO FINALIZADO
-                *MOTIVO DA NEGATIVA: , SEM CONTATO PARA CONFIRMAR
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO?
-                *NOME DA PESSOA COM QUEM FALOU: X
+                *MOTIVO DA NEGATIVA:<input type="text" class="input_checklist"
+                    placeholder="ex: cliente não pode acompanhar">
+                *NÚMERO QUE REALIZOU CONTATO: <input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO: <input type="text" class="input_checklist" placeholder="sim/não">
+                *NOME DA PESSOA COM QUEM FALOU: <input type="text" class="input_checklist" placeholder="Maria">
                 *RAPHAEL JOVINO
 
             </p>
@@ -129,10 +90,10 @@
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
                 *MOTIVO CLIENTE: CHUVA
-                *MOTIVO DA NEGATIVA: SEM CONTATO PARA CONFIRMAR
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *NOME DA PESSOA COM QUEM FALOU:
+                *MOTIVO DA NEGATIVA: CHUVA
+                *NÚMERO QUE REALIZOU CONTATO: <input type="text" class="input_checklist" placeholder="XX-XXXXX-XXXX">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *NOME DA PESSOA COM QUEM FALOU:<input type="text" class="input_checklist" placeholder="Maria">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -143,10 +104,10 @@
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
                 *MOTIVO CLIENTE: ENDEREÇO NÃO LOCALIZADO
-                *MOTIVO DA NEGATIVA: SEM CONTATO PARA CONFIRMAR
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *NOME DA PESSOA COM QUEM FALOU:
+                *MOTIVO DA NEGATIVA: ENDEREÇO NÃO LOCALIZADO
+                *NÚMERO QUE REALIZOU CONTATO: <input type="text" class="input_checklist" placeholder="XX-XXXXX-XXXX">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *NOME DA PESSOA COM QUEM FALOU:<input type="text" class="input_checklist" placeholder="Maria">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -157,10 +118,11 @@
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
                 *MOTIVO CLIENTE: ACESSO PROIBIDO
-                *MOTIVO DA NEGATIVA: , SEM CONTATO PARA CONFIRMAR
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *NOME DA PESSOA COM QUEM FALOU:
+                *MOTIVO DA NEGATIVA: <input type="text" class="input_checklist"
+                    placeholder="ex: Cliente sem chave do armário">
+                *NÚMERO QUE REALIZOU CONTATO: <input type="text" class="input_checklist" placeholder="XX-XXXXX-XXXX">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *NOME DA PESSOA COM QUEM FALOU:<input type="text" class="input_checklist" placeholder="Maria">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -171,10 +133,10 @@
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
                 *MOTIVO CLIENTE: CASA FECHADA
-                *MOTIVO DA NEGATIVA: CASA FECHADA , SEM CONTATO PARA CONFIRMAR
-                *NÚMERO QUE REALIZOU CONTATO: 27998793219
-                *CLIENTE LOCALIZADO? NÃO
-                *NOME DA PESSOA COM QUEM FALOU: X
+                *MOTIVO DA NEGATIVA: CASA FECHADA
+                *NÚMERO QUE REALIZOU CONTATO: <input type="text" class="input_checklist" placeholder="XX-XXXXX-XXXX">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *NOME DA PESSOA COM QUEM FALOU:<input type="text" class="input_checklist" placeholder="Maria">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -184,13 +146,13 @@
             <h3>Caixa Lotada</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: CAIXA LOTADA - VAI AGUARDAR
-                *TECNICO/SUPERVISOR: |
-                *MATRÍCULA:
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? SIM
+                *MOTIVO TÉCNICO: CAIXA LOTADA
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
                 *RAPHAEL JOVINO
 
             </p>
@@ -201,13 +163,13 @@
             <h3>Tubulação obstruida</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: TUBULAÇÃO OBSTRUIDA - VAI RESOLVER
-                *TECNICO/SUPERVISOR: |
-                *MATRÍCULA:
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? SIM
+                *MOTIVO TÉCNICO: TUBULAÇÃO OBSTRUIDA
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *VAI RESOLVER:<input type="text" class="input_checklist" placeholder="sim/não">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -217,13 +179,13 @@
             <h3>Necessita de adequação predial</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: NECESSITA DE ADEQUAÇÃO PREDIAL - VAI AGUARDAR
-                *TECNICO/SUPERVISOR: |
-                *MATRÍCULA:
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? SIM
+                *MOTIVO TÉCNICO: NECESSITA DE ADEQUAÇÃO PREDIAL
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -233,13 +195,13 @@
             <h3>Fibra atenuada</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: CAIXA FIBRA ATENUADA - VAI AGUARDAR
-                *TECNICO/SUPERVISOR: |
-                *MATRÍCULA:
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? SIM
+                *MOTIVO TÉCNICO: CAIXA FIBRA ATENUADA
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -249,13 +211,13 @@
             <h3>Caixa Potencia Alta</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: CAIXA POTENCIA ALTA - VAI AGUARDAR
-                *TECNICO/SUPERVISOR: |
-                *MATRÍCULA: x
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? SIM
+                *MOTIVO TÉCNICO: CAIXA POTENCIA ALTA
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -265,13 +227,13 @@
             <h3>Caixa sem potencia</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: CAIXA SEM POTENCIA - VAI AGUARDAR
-                *TECNICO/SUPERVISOR: |
-                *MATRÍCULA: -
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? SIM
+                *MOTIVO TÉCNICO: CAIXA SEM POTENCIA
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -282,15 +244,15 @@
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
                 *MOTIVO TÉCNICO: FORA DA ÁREA DE COBERTURA
-                *TECNICO/SUPERVISOR: | X
-                *MATRÍCULA: X
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? NÃO
-                *ARMARIO:
-                *CTO:
-                *Endereço:
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO: SIM
+                *VAI AGUARDAR O PRAZO: NÃO
+                *ARMÁRIO:<input type="text" class="input_checklist" placeholder="ex I01">
+                *CTO:<input type="text" class="input_checklist" placeholder="ex: 1314">
+                *Endereço:<input type="text" class="input_checklist" placeholder="endereço da ordem">
                 *RAPHAEL JOVINO
 
             </p>
@@ -302,12 +264,12 @@
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
                 *MOTIVO TÉCNICO: ÁREA DE RISCO -
-                *TECNICO/SUPERVISOR: |
-                *MATRÍCULA:
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? NÃO
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO: SIM
+                *VAI AGUARDAR O PRAZO: NÃO
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -317,13 +279,13 @@
             <h3>Manobra CTO</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: MANOBRA CTO - VAI AGUARDAR
-                *TECNICO/SUPERVISOR: | X
-                *MATRÍCULA: X
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? SIM
+                *MOTIVO TÉCNICO: MANOBRA CTO
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -333,13 +295,13 @@
             <h3>Pendente rede Externa</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: PENDENTE REDE EXTERNA - VAI AGUARDAR
-                *TECNICO/SUPERVISOR: |
-                *MATRÍCULA:
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? SIM
+                *MOTIVO TÉCNICO: PENDENTE REDE EXTERNA
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
@@ -350,32 +312,13 @@
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
                 *MOTIVO TÉCNICO: TA - PLANTA INTERNA - VAI AGUARDAR
-                *TECNICO/SUPERVISOR: |
-                *MATRÍCULA: X
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO? NÃO
-                *ESTÁ CIENTE DO PRAZO? SIM
-                *VAI AGUARDAR O PRAZO? SIM
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
+                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
                 *RAPHAEL JOVINO
-            </p>
-            <button class="btn">Copiar</button>
-        </div>
-
-        <div class="checklist" data-text="Checklist Fibrasil">
-            <h3>Checklist Fibrasil</h3>
-            <p class="texto_para_copiar">
-                ***AGENDAMENTO E CONTROLE RJ***
-                FALHA IDENTIFICADA, selecionar (X)
-                ( ) I Caixa não localizada
-                ( ) I Falha Funcional
-                ( ) <Informar outra falha, caso não conste acima>
-                    ID DO DESIGNADOR / ID DO CLIENTE -
-                    END CLIENTE - XXXXXXXXX
-                    CAIXA / SPLITTER DESIGNADO (DE) - XXXXXXX
-                    CAIXA / SPLITTER INFORMADO (PARA)– XXXXX
-                    OBSERVAÇÃO / DETALHES DA FALHA:
-                    ** ORDEM NÃO TRATADA
-                    **RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
         </div>
@@ -384,7 +327,7 @@
             <h3>Processo CO</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE RJ
-                *Tratativa com CO para subir link | aprovisionamento.
+                *Técnico orientado a entrar com contato com CO para subir link | aprovisionamento.
                 *ORDEM NAO TRATADA
                 *RAPHAEL JOVINO
             </p>
@@ -409,9 +352,7 @@
                 *AGENDAMENTO E CONTROLE
                 *Em TODAS das pendências, obrigatório RVT pronto, foto ATUALIZADA com uso do APP (TIME STAMP),
                 georreferência ativa, foto de perfil ou crachá em frente ao local com mapa e número da residência na
-                foto, técnico precisa estar no local. Em caso de pendência por motivo TÉCNICO, (EXCLUSIVO RJ | ES )
-                necessário supervisor VIVO em linha ou subir comentário no ETA, para validação da pendência em
-                questão.
+                foto, técnico precisa estar no local.
                 *ORDEM NÃO TRATADA
                 *RAPHAEL JOVINO
             </p>
@@ -434,7 +375,7 @@
             <h3>Reparo</h3>
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE RJ
-                *COP não trata REPARO | DEFEITO ** Tratativa com setor EXCELÊNCIA REPARO 08007713158
+                *Técnico orientado a entrar em contato com EXCELÊNCIA REPARO 08007713158
                 *ORDEM NAO TRATADA
                 *RAPHAEL JOVINO
             </p>
@@ -460,7 +401,7 @@
             <button class="btn">Copiar</button>
         </div>
 
-        <div class="checklist" data-text="cumprida on">
+        <div class="checklist" data-text="agenda cumprida on">
             <h3>Agenda sera cumprida, contato com focal</h3>
             <p class="texto_para_copiar">
                 Conforme orientação do focal: Agenda será cumprida
@@ -469,7 +410,7 @@
         </div>
 
         <div class="checklist" data-text="Reagendar off">
-            <h3>Reagendar sem contato</h3>
+            <h3>Reagendar sem contato com focal</h3>
             <p class="texto_para_copiar">
                 Reagendar, sem contato com focal
             </p>
@@ -505,10 +446,13 @@
             <p class="texto_para_copiar">
                 *AGENDAMENTO E CONTROLE
                 *MOTIVO CLIENTE: SUSPEITA DE FRAUDE
-                *MOTIVO DA NEGATIVA: , SEM CONTATO PARA CONFIRMAR
-                *NÚMERO QUE REALIZOU CONTATO:
-                *CLIENTE LOCALIZADO?
-                *NOME DA PESSOA COM QUEM FALOU: X
+                *MOTIVO DA NEGATIVA: SUSPEITA DE FRAUDE
+                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                *NÚMERO QUE REALIZOU CONTATO: NÃO LIGAR EM CASO DE FRADE
+                *CLIENTE LOCALIZADO: NÃO LIGAR EM CASO DE FRADE
+                *ESTÁ CIENTE DO PRAZO: NÃO LIGAR EM CASO DE FRADE
+                *VAI AGUARDAR O PRAZO: NÃO LIGAR EM CASO DE FRADE
                 *RAPHAEL JOVINO
             </p>
             <button class="btn">Copiar</button>
