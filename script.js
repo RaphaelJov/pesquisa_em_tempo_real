@@ -26,27 +26,24 @@ input.addEventListener('input', () => {
 
 btn.forEach(el => {
     el.addEventListener('click', () => {
-
-        //seleciona o elemento anterior a class btn, sendo ela 
+        // Seleciona o elemento anterior à classe btn
         const checklist = el.previousElementSibling;  
 
-        // cria variavel vazia para armazenar futuramente
+        // Variável para armazenar o texto que será copiado
         let textoParaCopiar = "";
 
-        //percorrer os nós filhos de   checklist
+        // Percorre os nós filhos de checklist
         checklist.childNodes.forEach(node => {
-
-            //verifica se o que foi encontrado é do tipo texto e concatena com textoParaCopiar
             if (node.nodeType === Node.TEXT_NODE) {
-                // Adiciona o texto fixo diretamente ao textoParaCopiar
+                // Concatena o texto fixo diretamente ao textoParaCopiar
                 textoParaCopiar += node.textContent;
             } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'INPUT') {
-                // Verifica se o input tem um valor preenchido
-                const inputValue = node.value ? node.value : '';
-                
-                // Adiciona apenas o valor se houver, caso contrário pula o placeholder
-                if (inputValue) {
-                    textoParaCopiar += ` ${inputValue} `;
+                if (node.type === "text") {
+                    // Verifica se o input do tipo texto tem valor
+                    textoParaCopiar += ` ${node.value ? node.value : ''} `;
+                } else if (node.type === "checkbox") {
+                    // Adiciona "Sim" ou "Não" dependendo do estado do checkbox
+                    textoParaCopiar += node.checked ? " Sim " : " Não ";
                 }
             }
         });
@@ -67,7 +64,6 @@ btn.forEach(el => {
         // Remove a visibilidade da mensagem_final após 2 segundos
         setTimeout(() => {
             mensagem_final.classList.remove('visivel');
-            container.classList.remove('desaparecer');
             window.location.reload();
         }, 2000);
     });

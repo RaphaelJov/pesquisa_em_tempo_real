@@ -15,34 +15,53 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!-- importacao css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div id="mensagem_final">Texto copiado</div>
+    <div id="mensagem_final" class="btn-success mensagem">Texto copiado</div>
     <h1>Checklist Processos</h1>
 
-    <input type=" text" id="input" placeholder="Ex: Gestão de Expectativa / chuva / Suspeita de Fraude" autofocus>
+    <input type=" text" id="input" placeholder="Ex: Agendamento /Gestão de Expectativa / chuva / Fraude" autofocus>
 
-    <div class="container">
+    <div class="container border">
+
+        <div class="checklist " data-text="Agendamento e Controle">
+            <h3>Agendamento e Controle RJ</h3>
+            <p class="texto_para_copiar">
+                AGENDAMENTO E CONTROLE RJ
+                ENDEREÇO: OK
+                ACEITA ANTECIPAR:<input type="checkbox" class="checkbox form-check-input">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="Ex Maria">
+                PONTO DE REFERÊNCIA:<input type="text" class="input_checklist" placeholder="Barbearia do Zé">
+                DATA DO AGENDAMENTO:<input type="text" class="input_checklist" placeholder="19/03/2025">
+                PERIODO:<input type="text" class="input_checklist" placeholder="15:30 - 18:00">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
+            </p>
+            <button class="btn btn-primary">Copiar</button>
+        </div>
 
         <div class="checklist" data-text="Retenção excepcional">
             <h3>RETENÇÃO EXCEPCIONAL</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE RJ
-                *MOTIVO RETENÇÃO: <input type="text" class="input_checklist" placeholder="ex: cancelamento">
-                *NÚMERO QUE REALIZOU CONTATO: TRATAIVA RETENÇÃO
-                *CLIENTE LOCALIZADO: TRATATIVA RETENÇÃO
-                *A CEITOU TRANSFERENCIA: TRATATIVA RETENÇÃO
-                *TRANSFERIDO COM SUCESSO: TRATATIVA RETENÇÃO
-                *NOME DS ATENDENTE RETENÇÃO: TRATATIVA RETENÇÃO
-                *MOTIVO TRATATIVA COP: <input type="text" class="input_checklist"
-                    placeholder="conforme comentário retenção">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE RJ
+                MOTIVO RETENÇÃO: <input type="text" class="input_checklist" placeholder="ex: cancelamento">
+                NÚMERO QUE REALIZOU CONTATO: TRATAIVA RETENÇÃO
+                CLIENTE LOCALIZADO: TRATATIVA RETENÇÃO
+                A CEITOU TRANSFERENCIA: TRATATIVA RETENÇÃO
+                TRANSFERIDO COM SUCESSO: TRATATIVA RETENÇÃO
+                NOME DS ATENDENTE RETENÇÃO: TRATATIVA RETENÇÃO
+                MOTIVO TRATATIVA COP:<input type="text" class="input_checklist" placeholder="Ex: Conforme comentário">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Gestão de Expectativa">
@@ -54,7 +73,7 @@
                 gostaria de saber se a ordem vai a campo ou se precisamos reagendar por favor.
                 ORDEM: <input type="text" class="input_checklist" placeholder="EX: 68452587 / 8-8A45D1456-8">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Gestão de Expectativa massiva">
@@ -63,350 +82,358 @@
                 Olá!
                 Sou do Gestão de Expectativa, tudo bem?
                 Estou tratando uma ordem de sua região,
-                esta com massiva gostaria de saber como proceder com esse caso por favor.
+                esta com massiva se tem previsão e qual número do chamado por favor.
                 ORDEM: <input type="text" class="input_checklist" placeholder="EX: 68452587 / 8-8A45D1456-8">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
+        </div>
+
+        <div class="checklist" data-text="Gestão de Expectativa Tecnica">
+            <h3>Gestão de Expectativa Tecnica</h3>
+            <p class="texto_para_copiar">
+                Olá!
+                Sou do Gestão de Expectativa, tudo bem?
+                Estou tratando uma ordem de sua região,
+                esta status de pendente Técnica, gostaria de saber se tem previsão.
+                ORDEM: <input type="text" class="input_checklist" placeholder="EX: 68452587 / 8-8A45D1456-8">
+            </p>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Iniciada Não finalizada">
             <h3>Iniciada Não finalizada</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO CLIENTE: INICIADO NÃO FINALIZADO
-                *MOTIVO DA NEGATIVA:<input type="text" class="input_checklist"
-                    placeholder="ex: cliente não pode acompanhar">
-                *NÚMERO QUE REALIZOU CONTATO: <input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO: <input type="text" class="input_checklist" placeholder="sim/não">
-                *NOME DA PESSOA COM QUEM FALOU: <input type="text" class="input_checklist" placeholder="Maria">
-                *RAPHAEL JOVINO
-
+                AGENDAMENTO E CONTROLE RJ
+                MOTIVO CLIENTE: INICIADO NÃO FINALIZADO
+                MOTIVO DA NEGATIVA:<input type="text" class="input_checklist" placeholder="Ex: Falta parte interna">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO: <input type="checkbox" class="checkbox form-check-input">
+                NOME DA PESSOA COM QUEM FALOU: <input type="text" class="input_checklist" placeholder="Maria">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Chuva">
             <h3>Chuva</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO CLIENTE: CHUVA
-                *MOTIVO DA NEGATIVA: CHUVA
-                *NÚMERO QUE REALIZOU CONTATO: <input type="text" class="input_checklist" placeholder="XX-XXXXX-XXXX">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *NOME DA PESSOA COM QUEM FALOU:<input type="text" class="input_checklist" placeholder="Maria">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO CLIENTE: CHUVA
+                MOTIVO DA NEGATIVA: CHUVA
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO: <input type="checkbox" class="checkbox form-check-input">
+                NOME DA PESSOA COM QUEM FALOU: <input type="text" class="input_checklist" placeholder="Maria">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Endenreço não localizado">
             <h3>Endenreço não localizado</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO CLIENTE: ENDEREÇO NÃO LOCALIZADO
-                *MOTIVO DA NEGATIVA: ENDEREÇO NÃO LOCALIZADO
-                *NÚMERO QUE REALIZOU CONTATO: <input type="text" class="input_checklist" placeholder="XX-XXXXX-XXXX">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *NOME DA PESSOA COM QUEM FALOU:<input type="text" class="input_checklist" placeholder="Maria">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO CLIENTE: ENDEREÇO NÃO LOCALIZADO
+                MOTIVO DA NEGATIVA: ENDEREÇO NÃO LOCALIZADO
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO: <input type="checkbox" class="checkbox form-check-input">
+                NOME DA PESSOA COM QUEM FALOU: <input type="text" class="input_checklist" placeholder="Maria">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Acesso proibido">
             <h3>Acesso proibido</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO CLIENTE: ACESSO PROIBIDO
-                *MOTIVO DA NEGATIVA: <input type="text" class="input_checklist"
-                    placeholder="ex: Cliente sem chave do armário">
-                *NÚMERO QUE REALIZOU CONTATO: <input type="text" class="input_checklist" placeholder="XX-XXXXX-XXXX">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *NOME DA PESSOA COM QUEM FALOU:<input type="text" class="input_checklist" placeholder="Maria">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO CLIENTE: ACESSO PROIBIDO
+                MOTIVO DA NEGATIVA: <input type="text" class="input_checklist" placeholder="Ex: Cliente sem chave do armário">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO: <input type="checkbox" class="checkbox form-check-input">
+                NOME DA PESSOA COM QUEM FALOU: <input type="text" class="input_checklist" placeholder="Maria">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Casa Fechada">
             <h3>Casa Fechada</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO CLIENTE: CASA FECHADA
-                *MOTIVO DA NEGATIVA: CASA FECHADA
-                *NÚMERO QUE REALIZOU CONTATO: <input type="text" class="input_checklist" placeholder="XX-XXXXX-XXXX">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *NOME DA PESSOA COM QUEM FALOU:<input type="text" class="input_checklist" placeholder="Maria">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO CLIENTE: CASA FECHADA
+                MOTIVO DA NEGATIVA: CASA FECHADA
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO: <input type="checkbox" class="checkbox form-check-input">
+                NOME DA PESSOA COM QUEM FALOU: <input type="text" class="input_checklist" placeholder="Maria">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Caixa Lotada">
             <h3>Caixa Lotada</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: CAIXA LOTADA
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *RAPHAEL JOVINO
-
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: CAIXA LOTADA
+                TECNICO:<input type="text" class="input_checklist" placeholder="João">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="A00896541">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                VAI AGUARDAR O PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Tubulação obstruida">
             <h3>Tubulação obstruida</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: TUBULAÇÃO OBSTRUIDA
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *VAI RESOLVER:<input type="text" class="input_checklist" placeholder="sim/não">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: TUBULAÇÃO OBSTRUIDA
+                TECNICO:<input type="text" class="input_checklist" placeholder="João">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="A00896541">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                VAI AGUARDAR O PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Necessita de adequação predial">
             <h3>Necessita de adequação predial</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: NECESSITA DE ADEQUAÇÃO PREDIAL
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: NECESSITA DE ADEQUAÇÃO PREDIAL
+                TECNICO:<input type="text" class="input_checklist" placeholder="João">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="A00896541">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                VAI AGUARDAR O PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Fibra atenuada">
             <h3>Fibra atenuada</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: CAIXA FIBRA ATENUADA
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: CAIXA FIBRA ATENUADA
+                TECNICO:<input type="text" class="input_checklist" placeholder="João">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="A00896541">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                VAI AGUARDAR O PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Caixa Potencia alta">
             <h3>Caixa Potencia Alta</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: CAIXA POTENCIA ALTA
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: CAIXA POTENCIA ALTA
+                TECNICO:<input type="text" class="input_checklist" placeholder="João">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="A00896541">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                VAI AGUARDAR O PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Sindico não permite instalação">
             <h3>Sindico não permite instalação</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: SINDICO NÃO PERMITE INSTALAÇÃO
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: SINDICO NÃO PERMITE INSTALAÇÃO
+                TECNICO:<input type="text" class="input_checklist" placeholder="João">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="A00896541">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                VAI AGUARDAR O PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Caixa Sem potencia">
             <h3>Caixa sem potencia</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: CAIXA SEM POTENCIA
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: CAIXA SEM POTENCIA
+                TECNICO:<input type="text" class="input_checklist" placeholder="João">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="A00896541">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                VAI AGUARDAR O PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Fora da área de cobertura">
             <h3>Fora da área de cobertura</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: FORA DA ÁREA DE COBERTURA
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO: SIM
-                *VAI AGUARDAR O PRAZO: NÃO
-                *ARMÁRIO:<input type="text" class="input_checklist" placeholder="ex I01">
-                *CTO:<input type="text" class="input_checklist" placeholder="ex: 1314">
-                *Endereço:<input type="text" class="input_checklist" placeholder="endereço da ordem">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: FORA DA ÁREA DE COBERTURA
+                TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="A00896541">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO: <input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO: SIM
+                VAI AGUARDAR O PRAZO: NÃO
+                ARMÁRIO:<input type="text" class="input_checklist" placeholder="ex I01">
+                CTO:<input type="text" class="input_checklist" placeholder="ex: 1314">
+                Endereço:<input type="text" class="input_checklist" placeholder="endereço da ordem">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
 
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Area de Risco">
             <h3>Área de Risco</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: ÁREA DE RISCO -
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO: SIM
-                *VAI AGUARDAR O PRAZO: NÃO
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: ÁREA DE RISCO -
+                TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO: SIM
+                VAI AGUARDAR O PRAZO: NÃO
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Manobra CTO">
             <h3>Manobra CTO</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: MANOBRA CTO
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: MANOBRA CTO
+                TECNICO:<input type="text" class="input_checklist" placeholder="João">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="A00896541">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                VAI AGUARDAR O PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Pendente rede Externa">
             <h3>Pendente rede Externa</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: PENDENTE REDE EXTERNA
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: PENDENTE REDE EXTERNA
+                TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                VAI AGUARDAR O PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Ta Planta Interna">
             <h3>Ta Planta Interna</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO TÉCNICO: TA - PLANTA INTERNA - VAI AGUARDAR
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
-                *CLIENTE LOCALIZADO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *ESTÁ CIENTE DO PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *VAI AGUARDAR O PRAZO:<input type="text" class="input_checklist" placeholder="sim/não">
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO TÉCNICO: TA - PLANTA INTERNA - VAI AGUARDAR
+                TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                NÚMERO QUE REALIZOU CONTATO:<input type="text" class="input_checklist" placeholder="xx-xxxxx-xxxx">
+                CLIENTE LOCALIZADO:<input type="checkbox" class="checkbox form-check-input">
+                ESTÁ CIENTE DO PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                VAI AGUARDAR O PRAZO:<input type="checkbox" class="checkbox form-check-input">
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Processo CO">
             <h3>Processo CO</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE RJ
-                *Técnico orientado a entrar com contato com CO para subir link | aprovisionamento.
-                *ORDEM NAO TRATADA
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE RJ
+                Técnico orientado a entrar com contato com CO para subir link | aprovisionamento.
+                ORDEM NAO TRATADA
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Processo retenção">
             <h3>Processo retenção</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE RJ
-                *Retenção nos casos de: CANCELAMENTO * NÃO CONTRATOU O SERVIÇO * ENDEREÇO INCORRETO | DESIGNADOR |
-                FACILIDADE DIVERGENTE,
-                *ORDEM NAO TRATADA
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE RJ
+                Retenção nos casos de: CANCELAMENTO  NÃO CONTRATOU O SERVIÇO  ENDEREÇO INCORRETO | DESIGNADOR |
+                FACILIDADE DIVERGENTE,ORDEM DUPLICADA.
+                ORDEM NAO TRATADA
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Processo COP">
             <h3>Processo COP</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *Em TODAS das pendências, obrigatório RVT pronto, foto ATUALIZADA com uso do APP (TIME STAMP),
+                AGENDAMENTO E CONTROLE
+                Em TODAS das pendências, obrigatório RVT pronto, foto ATUALIZADA com uso do APP (TIME STAMP),
                 georreferência ativa, foto de perfil ou crachá em frente ao local com mapa e número da residência na
                 foto, técnico precisa estar no local.
-                *ORDEM NÃO TRATADA
-                *RAPHAEL JOVINO
+                ORDEM NÃO TRATADA
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Centro de excelencia">
             <h3>Centro de excelência</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE RJ
-                * Em caso de ACESSO PROIBIDO, CASA FECHADA (ALTAS) e Iniciado dentro do período.
+                AGENDAMENTO E CONTROLE RJ
+                 Em caso de ACESSO PROIBIDO, CASA FECHADA (ALTAS) e Iniciado dentro do período.
                 Setor de excelência: 08006023040 - B2C ou em caso de B2B 08007715305 opção 3. ou 08007710150
-                *ORDEM NAO TRATADA
-                *RAPHAEL JOVINO
+                ORDEM NAO TRATADA
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Reparo">
             <h3>Reparo</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE RJ
-                *Técnico orientado a entrar em contato com EXCELÊNCIA REPARO 08007713158
-                *ORDEM NAO TRATADA
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE RJ
+                Técnico orientado a entrar em contato com EXCELÊNCIA REPARO 08007713158
+                ORDEM NAO TRATADA
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Ligação caiu">
             <h3>Ligação caiu</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE RJ
-                *Ligação caiu ou técnico desligou antes de fazer todo processo.
-                *ORDEM NAO TRATADA
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE RJ
+                Ligação caiu ou técnico desligou antes de fazer todo processo.
+                ORDEM NAO TRATADA
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Reagendar on">
@@ -414,7 +441,7 @@
             <p class="texto_para_copiar">
                 Conforme orientação do focal: Reagendar
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="agenda cumprida on">
@@ -422,7 +449,7 @@
             <p class="texto_para_copiar">
                 Conforme orientação do focal: Agenda será cumprida
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Reagendar off">
@@ -430,7 +457,7 @@
             <p class="texto_para_copiar">
                 Reagendar, sem contato com focal
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Indevido agendamento">
@@ -438,7 +465,7 @@
             <p class="texto_para_copiar">
                 Indevido, pendente de agendamento
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Indevido triagem">
@@ -446,7 +473,7 @@
             <p class="texto_para_copiar">
                 Indevido, pendente triagem
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="Indevido data">
@@ -454,24 +481,24 @@
             <p class="texto_para_copiar">
                 Indevida, ordem será tratada na data programada
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
         <div class="checklist" data-text="suspeita de fraude">
             <h3>Suspeita de fraude</h3>
             <p class="texto_para_copiar">
-                *AGENDAMENTO E CONTROLE
-                *MOTIVO CLIENTE: SUSPEITA DE FRAUDE
-                *MOTIVO DA NEGATIVA: SUSPEITA DE FRAUDE
-                *TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
-                *MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
-                *NÚMERO QUE REALIZOU CONTATO: NÃO LIGAR EM CASO DE FRADE
-                *CLIENTE LOCALIZADO: NÃO LIGAR EM CASO DE FRADE
-                *ESTÁ CIENTE DO PRAZO: NÃO LIGAR EM CASO DE FRADE
-                *VAI AGUARDAR O PRAZO: NÃO LIGAR EM CASO DE FRADE
-                *RAPHAEL JOVINO
+                AGENDAMENTO E CONTROLE
+                MOTIVO CLIENTE: SUSPEITA DE FRAUDE
+                MOTIVO DA NEGATIVA: SUSPEITA DE FRAUDE
+                TECNICO:<input type="text" class="input_checklist" placeholder="nome do técnico">
+                MATRÍCULA:<input type="text" class="input_checklist" placeholder="matricula do supervisor">
+                NÚMERO QUE REALIZOU CONTATO: NÃO LIGAR EM CASO DE FRADE
+                CLIENTE LOCALIZADO: NÃO LIGAR EM CASO DE FRADE
+                ESTÁ CIENTE DO PRAZO: NÃO LIGAR EM CASO DE FRADE
+                VAI AGUARDAR O PRAZO: NÃO LIGAR EM CASO DE FRADE
+                OPERADOR:<input type="text" class="input_checklist" placeholder="Ex Pedro">
             </p>
-            <button class="btn">Copiar</button>
+            <button class="btn btn btn-primary">Copiar</button>
         </div>
 
     </div>
